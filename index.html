@@ -1,0 +1,124 @@
+<img<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Website</title>
+  </head>
+
+  <body>
+    <!-- header section-->
+    <header class="header" id="header">
+      <div class="logo-container">
+        <a href="./index.html">
+          <img src="Photo.png" alt="logo" height="25" width="25">
+        </a>
+        <span class="logo-text">Learn Coding</span>
+      </div>
+
+      <!--navbar section  -->
+      <nav class="navbar" id="navbar">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Conact</a>
+        <a href="media.html" class="nav-link">Media</a>
+        <!-- Success Login Button -->
+        <a href="login.html" class="nav-link login-btn">Login</a>
+      </nav>
+
+      <!-- Navbar(Mobile Only) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!--hero section  -->
+    <section class="container hero">
+      <!--left side  -->
+      <div class="hero-text">
+        <h1 class="hero-title">Welcome to Our Website</h1>
+        <p>This landing page includes extra content so the footer naturally stays at the bottom of the page,
+          without CSS tricks.</p>
+        <h3 class="section-title">Our Mission</h3>
+        <p class="section-para">We aim to deliver the simplest example website built using pure HTML. No styling
+          frameworks —
+          just clean classic HTML.</p>
+        <p class="section-para">You can continue adding text, paragraphs, lists, or images. More content pushes the
+          footer down
+          naturally.</p>
+        <p class="section-para">We aim to deliver the simplest example website built using pure HTML. No styling
+          frameworks —
+          just clean classic HTML.</p>
+        <p class="section-para">You can continue adding text, paragraphs, lists, or images. More content pushes the
+          footer down
+          naturally.</p>
+      </div>
+      <!--right side  -->
+      <div class="hero-image-box">
+        <img src="Coding-Html-01.svg" alt="html image" class="hero-image">
+        <h3 class="image-caption">Figure: HTML</h3>
+      </div>
+    </section>
+
+    <!-- Testimonial Cards -->
+    <section class="testimonial-section">
+      <h2 class="testimonial-heading">What Our Students Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>"This channel helped me understand coding basics in the simplest way!"</p>
+          <h4>- Akhilesh</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Clean content, beginner-friendly, and easy to navigate. Highly recommended."</p>
+          <h4>- Ankush</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Amazing resource for anyone starting their web development journey!"</p>
+          <h4>- Rajeev</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Amazing resource for anyone starting their web development journey!"</p>
+          <h4>- Saurav</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Amazing resource for anyone starting their web development journey!"</p>
+          <h4>- Vivek</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr>
+    <footer class="footer">
+      <p class="footer-text">© 2025 | All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+
+              // Hamburger LOGIC
+        const hmburger=document.getElementById("hamburger")
+        const navbar=document.getElementById("navbar")
+
+        hmburger.addEventListener("click",()=>{
+            navbar.classList.toggle("active");
+            hmburger.classList.toggle("open")
+        })
+
+      
+      //scroll logic
+      const header=document.getElementById("header")
+            window.addEventListener("scroll",()=>{
+            if(window.scrollY>20){
+                header.classList.add("scrolled")
+            }else{
+                header.classList.remove("scrolled")
+            }
+        })
+    </script>
+  </body>
+
+  </html>

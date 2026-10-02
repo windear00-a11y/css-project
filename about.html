@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0 15px;
+      font-size: 32px;
+      color: #1e4ede;
+    }
+
+    .content {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .content section {
+      margin-bottom: 25px;
+    }
+
+    .content h2 {
+      margin-bottom: 10px;
+      color: #1e4ede;
+      border-left: 4px solid #1e4ede;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="logo-container">
+      <a href="./index.html">
+        <img src="Photo.png" alt="logo" height="25" width="25">
+      </a>
+      <span class="logo-text">Learn Coding</span>
+    </div>
+
+    <!--navbar section  -->
+    <nav class="navbar" id="navbar">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Conact</a>
+      <a href="media.html" class="nav-link">Media</a>
+      <!-- Success Login Button -->
+      <a href="login.html" class="nav-link login-btn">Login</a>
+    </nav>
+
+    <!-- Navbar(Mobile Only) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <h1>About Me</h1>
+  <div class="content">
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Hello, This is Learn Coding Team, where i am working as a Web
+        Developer with a strong focus on the MERN Stack. With a background in
+        IT, I strive to create impactful and visually appealing software
+        solutions that leave a lasting impression.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education & Training</h2>
+      <p>
+        • [Degree/Certification], [Institution], [Year] <br />
+        • [Degree/Certification], [Institution], [Year] <br />
+        • [Relevant Course], [Platform/Institution], [Year]
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills & Expertise</h2>
+      <p>
+        • Proficient in [Programming Languages]<br />
+        • Experienced with [Software Tools/Technologies]<br />
+        • Strong understanding of [Design Principles]<br />
+        • Excellent problem-solving skills<br />
+        • Effective communicator and collaborator
+      </p>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <p>
+        • [Job Title], [Company], [Dates] — [Description] <br />
+        • [Job Title], [Company], [Dates] — [Description] <br />
+        • [Freelance/Contract], [Client], [Dates] — [Projects/Contributions]
+      </p>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <p>
+        • [Award/Recognition], [Institution], [Year] <br />
+        • [Achievement], [Platform], [Year]
+      </p>
+    </section>
+
+    <section>
+      <h2>Mission Statement</h2>
+      <p>
+        My mission is to use my skills and creativity to build innovative
+        digital solutions that exceed expectations and contribute positively
+        to the tech world. I believe in continuous learning and embracing new
+        challenges to grow every day.
+      </p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p class="footer-text">© 2025 | All Rights Reserved</p>
+  </footer>
+
+  <script>
+
+              // Hamburger LOGIC
+        const hmburger=document.getElementById("hamburger")
+        const navbar=document.getElementById("navbar")
+
+        hmburger.addEventListener("click",()=>{
+            navbar.classList.toggle("active");
+            hmburger.classList.toggle("open")
+        })
+
+      
+      //scroll logic
+      const header=document.getElementById("header")
+            window.addEventListener("scroll",()=>{
+            if(window.scrollY>20){
+                header.classList.add("scrolled")
+            }else{
+                header.classList.remove("scrolled")
+            }
+        })
+      </script>
+</body>
+
+</html>

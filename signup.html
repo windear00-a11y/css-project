@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      width: 100%;
+      max-width: 350px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    label {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:hover,
+    input[type="password"]:hover,
+    input[type="email"]:hover {
+      border-color: rgb(85, 85, 246);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: rgb(30, 78, 222);
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #06307f;
+    }
+
+    .bottom-text {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    a {
+      color: blue;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive fixes */
+    @media (max-width: 400px) {
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" " placeholder=" Enter username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter password" required>
+
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" placeholder="Repeat password" required>
+
+      <label>
+        <input type="checkbox">
+        Remember Me
+      </label>
+
+      <p style="margin-top:15px;">Select gender:</p>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label style="margin-left:10px;"><input type="radio" name="gender" value="female"> Female</label>
+
+      <br><br>
+
+      <label>Select Role:</label>
+      <select required>
+        <option value="">--select role--</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <input type="submit" value="Signup">
+    </form>
+  </div>
+
+  <p class="bottom-text">Have an account? <a href="login.html">Login here</a></p>
+</body>
+
+</html>
